@@ -1,5 +1,28 @@
 == README
 
+You are creating some event tracking software. Your task is to be able to create some events and then see the list of them. For now, don't worry styling, just the functionality.
+
+Events have:
+
+a date
+a description
+whether the event requires an ID
+capacity
+directions to the event
+You will need to handroll the controllers, views, models, migrations and routes to make this happen!
+
+Prefix Verb   URI Pattern                Controller#Action
+      root GET    /                          events#index
+    events GET    /events(.:format)          events#index
+           POST   /events(.:format)          events#create
+ new_event GET    /events/new(.:format)      events#new
+edit_event GET    /events/:id/edit(.:format) events#edit
+     event GET    /events/:id(.:format)      events#show
+           PATCH  /events/:id(.:format)      events#update
+           PUT    /events/:id(.:format)      events#update
+           DELETE /events/:id(.:format)      events#destroy
+
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
